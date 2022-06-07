@@ -1,11 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Router from './BookwormRouter/Router';
+import OpenNavBar from './components/OpenNavBar/OpenNavBar';
 
 function App() {
 	return (
-		<div className="flex flex-col items-center justify-center h-screen bg-white">
-			<h1>This is my sample app</h1>
+		<div>
+			<OpenNavBar />
+			<Router />
 		</div>
 	);
 }
