@@ -1,5 +1,1 @@
-# Sample Repository for Quickstart
-
-CRA + Typescript + TailwindCSS
-# my-sample-app
-# bookworm-internal
+# Work In Progress
