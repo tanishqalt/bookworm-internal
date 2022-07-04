@@ -59,11 +59,11 @@ const SingleBook = () => {
 				// if it is successful, update the user state
 				if (res.data.success) {
 					toast.success(res.data.message);
+					userState?.setUser(res.data.user);
 				} else {
 					toast.error(res.data.message);
 				}
 				console.log(res.data);
-				// userState?.setUser(res.data.user);
 			})
 			.catch((err) => {
 				console.log(err);

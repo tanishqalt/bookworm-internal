@@ -42,7 +42,7 @@ const OpenNavBar = () => {
 								<li> 👤 User Login </li>
 							</Link>
 							<Link to="/library-login">
-								<li> 📙 Library Admin Login </li>
+								<li> 📙 Library Dashboard </li>
 							</Link>
 						</ul>
 					</div>
