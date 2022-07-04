@@ -2,10 +2,12 @@ import UserContext from '../../../Context/UserContext';
 import { useContext, useState, useEffect } from 'react';
 import { ENDPOINTS, baseURL } from '../../../utils/Endpoints';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const BookBrowser = () => {
 	const [books, setBooks] = useState([
 		{
+			_id: '',
 			title: '',
 			author: '',
 			description: '',
@@ -18,6 +20,7 @@ const BookBrowser = () => {
 	const [keyword, setKeyword] = useState('');
 
 	const userState = useContext(UserContext);
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		if (keyword !== '') {
@@ -62,7 +65,7 @@ const BookBrowser = () => {
 					<div className="flex flex-wrap space-x-2">
 						{books.map((book) => {
 							return (
-								<div key={book.isbn} className="p-6 bg-gray-50">
+								<div onClick={() => navigate('/books/' + book._id)} key={book.isbn} className="p-6 bg-gray-50">
 									<h1 className="text-lg font-bold">{book.title}</h1>
 									<p className="text-base">
 										Written by {book.author} <span> (ISBN#{book.isbn}) </span>

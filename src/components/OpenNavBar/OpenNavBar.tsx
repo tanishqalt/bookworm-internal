@@ -21,6 +21,12 @@ const OpenNavBar = () => {
 							<Link to="/user/book-browser">
 								<li> 📚 Library </li>
 							</Link>
+							<Link to="/user/book-browser">
+								<li> 📚 Reading List </li>
+							</Link>
+							<Link to="/user/book-browser">
+								<li> 📚 Request a book </li>
+							</Link>
 							<Link to="/user/profile">
 								<li> 🧑‍💻 Profile </li>
 							</Link>
