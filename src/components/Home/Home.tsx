@@ -1,7 +1,17 @@
 import { useNavigate } from 'react-router-dom';
+import UserContext from '../../Context/UserContext';
+import { useContext, useEffect } from 'react';
 
 const Home = () => {
 	const navigator = useNavigate();
+	const userState = useContext(UserContext);
+
+	// if there is a user, redirect to the user's page
+	useEffect(() => {
+		if (userState?.user) {
+			navigator('/user/book-browser');
+		}
+	}, [userState?.user]);
 
 	return (
 		<div className="min-h-screen bg-black">
