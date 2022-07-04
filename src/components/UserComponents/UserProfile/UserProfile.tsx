@@ -61,8 +61,8 @@ const UserProfile = () => {
 						<hr className="my-3" />
 
 						<div>
-							<p className="text-xs"> Name </p>
-							<label className="mt-2 font-semibold"> Tanishq Sharma </label>
+							<p className="text-xs"> username </p>
+							<label className="mt-2 font-semibold"> {userState?.user?.username} </label>
 						</div>
 
 						<div className="mt-4">
