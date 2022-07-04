@@ -17,6 +17,7 @@ type User = {
 	password: string;
 	bio: string;
 	userType: string;
+	readingList: Array<any>;
 };
 
 export default UserContext;

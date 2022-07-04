@@ -58,6 +58,7 @@ const SingleBook = () => {
 				console.log(res);
 				// if it is successful, update the user state
 				toast.success('Added to reading list');
+				userState?.setUser(res.data.user);
 			})
 			.catch((err) => {
 				console.log(err);

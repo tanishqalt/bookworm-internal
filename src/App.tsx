@@ -33,5 +33,6 @@ type User = {
 	email: string;
 	password: string;
 	bio: string;
+	readingList: Array<any>;
 	userType: string;
 };
