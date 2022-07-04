@@ -1,7 +1,9 @@
+import { Toaster } from 'react-hot-toast';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from '../components/Home/Home';
 import LoginLibrary from '../components/LoginLibrary/LoginLibrary';
 import LoginUser from '../components/LoginUser/LoginUser';
+import OpenNavBar from '../components/OpenNavBar/OpenNavBar';
 import RegisterLibrary from '../components/RegisterLibrary/RegisterLibrary';
 import RegisterUser from '../components/RegisterUser/RegisterUser';
 import BookBrowser from '../components/UserComponents/BookBrowser/BookBrowser';
@@ -18,6 +20,8 @@ import UserProfile from '../components/UserComponents/UserProfile/UserProfile';
 const Router = () => {
 	return (
 		<BrowserRouter>
+			<Toaster />
+			<OpenNavBar />
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/library-login" element={<LoginLibrary />} />
