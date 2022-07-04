@@ -57,8 +57,13 @@ const SingleBook = () => {
 			.then((res) => {
 				console.log(res);
 				// if it is successful, update the user state
-				toast.success('Added to reading list');
-				userState?.setUser(res.data.user);
+				if (res.data.success) {
+					toast.success(res.data.message);
+				} else {
+					toast.error(res.data.message);
+				}
+				console.log(res.data);
+				// userState?.setUser(res.data.user);
 			})
 			.catch((err) => {
 				console.log(err);
@@ -66,7 +71,6 @@ const SingleBook = () => {
 	};
 
 	const updateBookRating = () => {
-		// axios.post(`${baseURL}${ENDPOINTS.UPDATE_BOOK_RATING}`);
 		console.log('update book rating');
 		console.log(currentRating);
 
