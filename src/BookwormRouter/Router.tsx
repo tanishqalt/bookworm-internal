@@ -12,6 +12,7 @@ import RegisterLibrary from '../components/RegisterLibrary/RegisterLibrary';
 import RegisterUser from '../components/RegisterUser/RegisterUser';
 import BookBrowser from '../components/UserComponents/BookBrowser/BookBrowser';
 import SingleBook from '../components/UserComponents/BookBrowser/SingleBook';
+import BookPicker from '../components/UserComponents/BookPicker/BookPicker';
 import ReadingList from '../components/UserComponents/ReadingList/ReadingList';
 import RequestForm from '../components/UserComponents/RequestForm/RequestForm';
 import UserHOC from '../components/UserComponents/UserHOC/UserHOC';
@@ -65,6 +66,7 @@ const Router = () => {
 						</UserHOC>
 					}
 				/>
+
 				<Route
 					path="/user/profile"
 					element={
@@ -86,6 +88,14 @@ const Router = () => {
 					element={
 						<UserHOC>
 							<ReadingList />
+						</UserHOC>
+					}
+				/>
+				<Route
+					path="/user/pick"
+					element={
+						<UserHOC>
+							<BookPicker />
 						</UserHOC>
 					}
 				/>

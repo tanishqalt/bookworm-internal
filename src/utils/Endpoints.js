@@ -21,6 +21,7 @@ const ENDPOINTS = {
 	SEARCH_BOOKS: '/books/search/',
 	UPDATE_TIMES_READ: '/books/update-timesread/',
 	TRENDING_BOOKS: '/books/trending',
+	RANDOM: '/books/random',
 };
 
 export { baseURL, ENDPOINTS };

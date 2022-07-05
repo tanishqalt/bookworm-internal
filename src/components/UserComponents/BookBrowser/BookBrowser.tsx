@@ -62,7 +62,7 @@ const BookBrowser = () => {
 					/>
 				</div>
 				<div className="mt-12">
-					<div className="flex flex-wrap space-x-2">
+					<div className="flex flex-wrap space-x-2 space-y-2">
 						{books.map((book) => {
 							return (
 								<div onClick={() => navigate('/books/' + book._id)} key={book.isbn} className="p-6 bg-gray-50">

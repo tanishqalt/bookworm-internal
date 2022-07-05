@@ -30,6 +30,9 @@ const OpenNavBar = () => {
 							<Link to="/user/profile">
 								<li> 🧑‍💻 Profile </li>
 							</Link>
+							<Link to="/user/pick">
+								<li> 🪄 Book Picker </li>
+							</Link>
 							<a href="/">
 								<li> 🚪 Logout </li>
 							</a>
