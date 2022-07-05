@@ -47,7 +47,7 @@ const BookBrowser = () => {
 
 	return (
 		<div>
-			<div className="max-w-5xl pt-20 m-auto">
+			<div className="max-w-5xl py-20 m-auto">
 				<div>
 					<h1 className="text-xl font-bold">Book Browser</h1>
 					<p>Search and find the books in our library</p>

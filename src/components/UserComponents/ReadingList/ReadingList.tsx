@@ -7,7 +7,7 @@ const ReadingList = () => {
 	const navigate = useNavigate();
 
 	return (
-		<div className="max-w-5xl pt-20 m-auto">
+		<div className="max-w-6xl py-20 m-auto">
 			<div>
 				<h1 className="text-3xl font-bold">Reading List</h1>
 			</div>
