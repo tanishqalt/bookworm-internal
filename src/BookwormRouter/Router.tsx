@@ -5,6 +5,7 @@ import Inventory from '../components/LibraryComponents/Inventory/Inventory';
 import LibraryHOC from '../components/LibraryComponents/LibraryHOC';
 import ListOfUsers from '../components/LibraryComponents/ListOfUsers/ListOfUsers';
 import ReadingRadar from '../components/LibraryComponents/ReadingRadar/ReadingRadar';
+import RequestList from '../components/LibraryComponents/RequestList/RequestList';
 import LoginLibrary from '../components/LoginLibrary/LoginLibrary';
 import LoginUser from '../components/LoginUser/LoginUser';
 import OpenNavBar from '../components/OpenNavBar/OpenNavBar';
@@ -53,6 +54,14 @@ const Router = () => {
 					element={
 						<LibraryHOC>
 							<ListOfUsers />
+						</LibraryHOC>
+					}
+				/>
+				<Route
+					path="/library/requests"
+					element={
+						<LibraryHOC>
+							<RequestList />
 						</LibraryHOC>
 					}
 				/>

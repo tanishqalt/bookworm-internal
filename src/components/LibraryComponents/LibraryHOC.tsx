@@ -15,6 +15,9 @@ const LibraryHOC = (props: any) => {
 						<Link to="/library/users">
 							<li> 📚 All Users </li>
 						</Link>
+						<Link to="/library/requests">
+							<li> 📚 All Requests </li>
+						</Link>
 					</ul>
 				</div>
 			</div>
