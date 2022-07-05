@@ -29,7 +29,7 @@
 
 -   For Designing, We have used [TailwindCSS](https://tailwindcss.com/) library. Tailwind is a utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
 -   For Deployment, We have used Heroku and localhost.
--   For Backend, We have used ExpressJS. The source code is available here [`Server Code`](https://github.com/tanishqalt/bookworm-internal)
+-   For Backend, We have used ExpressJS. The source code is available here [`Server Code`](https://github.com/tanishqalt/bookworm-server)
 
 ---
 
