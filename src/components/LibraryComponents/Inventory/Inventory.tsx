@@ -77,6 +77,8 @@ const AddBook = () => {
 			})
 			.then((res) => {
 				console.log(res);
+				// refresh
+				window.location.reload();
 			})
 			.catch((err) => {
 				console.log(err);
