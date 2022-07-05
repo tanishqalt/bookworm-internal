@@ -29,8 +29,8 @@ const BookPicker = () => {
 
 	return (
 		<div>
-			<div className="max-w-6xl pt-20 m-auto font-bold">
-				<h1 className="text-5xl">Your book of the day is 😲 </h1>
+			<div className="max-w-6xl pt-20 m-auto">
+				<h1 className="text-5xl font-bold">Your book of the day is 😲 </h1>
 				<div onClick={() => navigate('/books/' + randomBook._id)} key={randomBook.isbn} className="p-6 bg-gray-50">
 					<h1 className="text-lg font-bold">{randomBook.title}</h1>
 					<p className="text-base">
