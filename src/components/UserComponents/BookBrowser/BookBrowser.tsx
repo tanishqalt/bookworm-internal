@@ -72,7 +72,7 @@ const BookBrowser = () => {
 											Written by {book.author} <span> (ISBN#{book.isbn}) </span>
 										</p>
 										<p className="text-sm">{book.description}</p>
-										<p className="text-sm">Times Read: {book.timesRead}</p>
+										<p className="mt-2 text-sm font-bold">{book.timesRead} bookworms are interested in this book</p>
 									</div>
 								</div>
 							);
