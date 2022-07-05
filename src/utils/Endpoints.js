@@ -20,6 +20,7 @@ const ENDPOINTS = {
 	UPDATE_BOOK_RATING: '/books/update-rating',
 	SEARCH_BOOKS: '/books/search/',
 	UPDATE_TIMES_READ: '/books/update-timesread/',
+	TRENDING_BOOKS: '/books/trending',
 };
 
 export { baseURL, ENDPOINTS };

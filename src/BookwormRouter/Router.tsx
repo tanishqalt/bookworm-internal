@@ -1,6 +1,10 @@
 import { Toaster } from 'react-hot-toast';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from '../components/Home/Home';
+import Inventory from '../components/LibraryComponents/Inventory/Inventory';
+import LibraryHOC from '../components/LibraryComponents/LibraryHOC';
+import ListOfUsers from '../components/LibraryComponents/ListOfUsers/ListOfUsers';
+import ReadingRadar from '../components/LibraryComponents/ReadingRadar/ReadingRadar';
 import LoginLibrary from '../components/LoginLibrary/LoginLibrary';
 import LoginUser from '../components/LoginUser/LoginUser';
 import OpenNavBar from '../components/OpenNavBar/OpenNavBar';
@@ -27,6 +31,30 @@ const Router = () => {
 				<Route path="/" element={<Home />} />
 				<Route path="/library-login" element={<LoginLibrary />} />
 				<Route path="/library-register" element={<RegisterLibrary />} />
+				<Route
+					path="/library/inventory"
+					element={
+						<LibraryHOC>
+							<Inventory />
+						</LibraryHOC>
+					}
+				/>
+				<Route
+					path="/library/reading-radar"
+					element={
+						<LibraryHOC>
+							<ReadingRadar />
+						</LibraryHOC>
+					}
+				/>
+				<Route
+					path="/library/users"
+					element={
+						<LibraryHOC>
+							<ListOfUsers />
+						</LibraryHOC>
+					}
+				/>
 				<Route path="/login" element={<LoginUser />} />
 				<Route path="/register" element={<RegisterUser />} />
 				<Route
