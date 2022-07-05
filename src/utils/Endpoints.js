@@ -2,7 +2,7 @@
  * Endpoints for various APIS
  */
 
-const baseURL = 'https://react-project-humber.herokuapp.com/';
+const baseURL = 'https://react-project-humber.herokuapp.com';
 
 // const baseURL = process.env.PRODUCTION ? liveURL : 'http://localhost:3000/';
 
