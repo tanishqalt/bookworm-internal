@@ -37,7 +37,7 @@ const BookPicker = () => {
 						Written by {randomBook.author} <span> (ISBN#{randomBook.isbn}) </span>
 					</p>
 					<p className="text-sm">{randomBook.description}</p>
-					<p className="text-sm">Times Read: {randomBook.timesRead}</p>
+					<p className="mt-2 text-sm font-bold">{randomBook.timesRead} bookworms are interested in this book</p>
 				</div>
 			</div>
 		</div>
