@@ -62,16 +62,18 @@ const BookBrowser = () => {
 					/>
 				</div>
 				<div className="mt-12">
-					<div className="flex flex-wrap space-x-2 space-y-2">
+					<div className="">
 						{books.map((book) => {
 							return (
-								<div onClick={() => navigate('/books/' + book._id)} key={book.isbn} className="p-6 bg-gray-50">
-									<h1 className="text-lg font-bold">{book.title}</h1>
-									<p className="text-base">
-										Written by {book.author} <span> (ISBN#{book.isbn}) </span>
-									</p>
-									<p className="text-sm">{book.description}</p>
-									<p className="text-sm">Times Read: {book.timesRead}</p>
+								<div onClick={() => navigate('/books/' + book._id)} key={book.isbn} className="w-1/2 p-2">
+									<div className="p-5 bg-gray-200">
+										<h1 className="text-lg font-bold">{book.title}</h1>
+										<p className="text-base">
+											Written by {book.author} <span> (ISBN#{book.isbn}) </span>
+										</p>
+										<p className="text-sm">{book.description}</p>
+										<p className="text-sm">Times Read: {book.timesRead}</p>
+									</div>
 								</div>
 							);
 						})}
