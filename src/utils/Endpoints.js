@@ -2,7 +2,9 @@
  * Endpoints for various APIS
  */
 
-const baseURL = 'http://localhost:3000';
+const liveURL = 'https://react-project-humber.herokuapp.com/';
+
+const baseURL = process.env.PRODUCTION ? liveURL : 'http://localhost:3000/';
 
 const ENDPOINTS = {
 	USER_REGISTER: '/user/register',
