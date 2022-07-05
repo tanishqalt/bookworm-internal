@@ -31,7 +31,7 @@ const BookPicker = () => {
 		<div>
 			<div className="max-w-6xl pt-20 m-auto">
 				<h1 className="text-5xl font-bold">Your book of the day is 😲 </h1>
-				<div onClick={() => navigate('/books/' + randomBook._id)} key={randomBook.isbn} className="p-6 bg-gray-50">
+				<div onClick={() => navigate('/books/' + randomBook._id)} key={randomBook.isbn} className="p-6 mt-4 bg-gray-50">
 					<h1 className="text-lg font-bold">{randomBook.title}</h1>
 					<p className="text-base">
 						Written by {randomBook.author} <span> (ISBN#{randomBook.isbn}) </span>
